@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        /* Custom CSS style for carousel images */
+        #carouselExampleCaptions .carousel-item img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Center the carousel section */
+        #carouselExampleCaptions {
+            margin: 50px auto;
+        }
+
+        .container-xl {
+            margin: 30px;
+        }
+
+        .img-fluid {
+            margin-bottom: 15px;
+        }
+        .navbar{
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!---nav item-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="#intro">
+                <span class="text-dark fw-bold">
+                    Morocco
+                    <center style="color:rgb(118, 18, 18)">
+                        Realm of Radiance
+                    </center>
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place.html">Place</a>
+                    </li>
+                    <!--dropdown list-->
+                    <div class="dropdown md-2">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Discover
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button"
+                                    onclick="window.location.href='mealInfo.html'">Food</button></li>
+
+                            <li><button class="dropdown-item" type="button"
+                                    onclick="window.location.href='place.html'">Place to go</button></li>
+                            <li><a class="dropdown-item" type="button" href="wetherInformation.html">Weather</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </nav><br><br><br>
+
+    <section id="places-to-visit" class="text-center">
+        <div class="container-xl">
+            <h2 class="mb-4">Places to Visit in Marocco</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-03/menara-gardens-marrakesh-morocco.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Marrakesh</h5>
+                            <p class="card-text">Marrakesh knows how to put on a show. Its heady sights and sounds
+                                dazzle, frazzle and enchant, as they have done for almost a millennia. Circuses
+                                can’t compare to the mayhem of the Unesco-acclaimed halqa
+                                (street theater) in Marrakesh’s main square, Djemaa El Fna.
+                                By day, Djemaa draws crowds with snake-charmers, acrobats and
+                                dentists with jars of pulled teeth. Around sunset, 100 restaurant
+                                stalls kick off the world’s most raucous grilling competition. After
+                                dinner, Djemaa music jam sessions get underway. Audience participation is
+                                always encouraged, and spare change ensures encores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-10/GettyImages-503231588.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Fez</h5>
+                            <p class="card-text">The Fez medina is the maze to end all mazes. The only way to experience
+                                it is to plunge headfirst. Don’t be afraid of getting lost –
+                                follow the flow of people to take you back to one of the two main
+                                thoroughfares, or ask a shopkeeper to point you in the right
+                                direction. It’s an adventure into a medieval world of hidden squares, warrens of
+                                workshops and
+                                colorful markets. Remember to look up and see intricate plasterwork,
+                                ornately carved cedarwood, dazzling mosaic tiles and curly Arabic
+                                calligraphy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-04/GettyRF_531053735.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 3">
+                        <div class="card-body">
+                            <h5 class="card-title">High Atlas Mountains</h5>
+                            <p class="card-text">The High Atlas Mountains are North Africa’s tallest mountain range, a
+                                trekker’s
+                                paradise from spring to fall. The range runs diagonally across Morocco for almost 620
+                                miles (1000km), encircling Marrakesh to the south and east from the
+                                Atlantic Coast just north of Agadir to Khenifra in the northeast.
+                                Its saw-toothed peaks act as a weather barrier between the mild,
+                                Mediterranean climate to the north and the Sahara to the south.
+                                In its highest reaches, snow falls from September to May, allowing
+                                for winter sports in Oukaimeden, while year-round rivers flow towards
+                                Marrakesh creating a network of fertile valleys.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    < <section id="places-to-visit" class="text-center">
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-04/shutterstockRF_732342793.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Moulay Idriss Zerhoun</h5>
+                            <p class="card-text">Named for Morocco’s most revered saint, the holy little town of Moulay
+                                Idriss Zerhoun contains
+                                the mausoleum of Moulay Idriss and is one of the most important
+                                pilgrimage spots in the country. In fact, it wasn’t until 2005 that
+                                non-Muslims were permitted to stay overnight. It straddles two
+                                hills and, whichever side of town you're on, the views across the
+                                green-tiled rooftops and out to the rolling countryside beyond,
+                                where olive groves produce a fragrant oil, are undeniably pretty,
+                                especially in the evening light. Look out for Morocco’s only
+                                cylindrical minaret.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-04/shutterstockRF_650492848.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Volubilis</h5>
+                            <p class="card-text">Amazigh king Juba II, whose wife was the daughter
+                                of Antony and Cleopatra, was installed at Volubilis by the Romans.
+                                The town became a thriving farming community producing olive oil,
+                                wheat and wine for the ancient Roman army. Today you can still
+                                stand on the basilica steps, look out over the same fertile fields
+                                and survey his kingdom. A museum has opened, and you can wander
+                                fairly freely around this Unesco World Heritage site, pausing to
+                                peer at the dazzling mosaics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://lp-cms-production.imgix.net/2021-04/GettyImages-590114733.jpg?auto=format&q=75&w=1024"
+                            class="card-img-top" alt="Place 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Mirleft</h5>
+                            <p class="card-text">You can surf all along Morocco’s Atlantic coast, but one
+                                of the best places to catch a wave is Mirleft, a sleepy beach town
+                                where the mountains meet the Atlantic Ocean. With a string of
+                                pristine – and often deserted outside of Moroccan holidays –
+                                beaches and budget-friendly guesthouses, it makes a low-key
+                                and less windy alternative to Essaouira. Affordable outfit
+                                Spot-M takes out experienced and novice surfers for group and
+                                individual lessons, and also runs week-long surf camps with
+                                yoga thrown in.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+        <!--js strap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
